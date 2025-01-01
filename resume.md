@@ -15,6 +15,7 @@ Beyond my technical skills, I am deeply committed to education and mentorship, t
 
 ## Technical Skills
 
+- **Programming languages** Python (6 years), Javascript (5 years), Typescript (5 years), R (3 years), C++ (2 years), C# (1 year).
 - **Python Frameworks:** Django (5+ years), Flask (5+ years), FastAPI (3 years).
 - **Frontend Frameworks:** VueJS (5+ years), NuxtJS (4+ years), ReactJS (2+ years).
 - **Backend with NodeJS:** Express/NestJS (4+ years).
