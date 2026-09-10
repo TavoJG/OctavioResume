@@ -1,6 +1,7 @@
 .DS_Store
 Thumbs.db
 *.pdf
+!resume_*.pdf
 *.log
 *.aux
 *.out
@@ -12,7 +13,6 @@ Thumbs.db
 *.synctex.gz
 *.bbl
 *.blg
-.vscode/
 .idea/
 *.swp
 *~

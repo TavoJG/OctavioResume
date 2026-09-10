@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Resume of Octavio Jimenez Gonzalez, Sr. Software / Data Engineer.">
+    <title>Octavio Jimenez Gonzalez - Resume</title>
+    <style>
+      :root {
+        color-scheme: light dark;
+        --bg: #f7f7f4;
+        --fg: #1d2329;
+        --muted: #5e6872;
+        --panel: #ffffff;
+        --border: #d7dce0;
+        --accent: #0f766e;
+        --accent-dark: #0b5f59;
+      }
+
+      @media (prefers-color-scheme: dark) {
+        :root {
+          --bg: #101316;
+          --fg: #edf1f5;
+          --muted: #a9b3bd;
+          --panel: #181d22;
+          --border: #303840;
+          --accent: #2dd4bf;
+          --accent-dark: #5eead4;
+        }
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        background: var(--bg);
+        color: var(--fg);
+        font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+        line-height: 1.5;
+      }
+
+      main {
+        width: min(1120px, calc(100% - 32px));
+        margin: 0 auto;
+        padding: 28px 0;
+      }
+
+      header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 20px;
+        margin-bottom: 20px;
+      }
+
+      h1 {
+        margin: 0;
+        font-size: clamp(1.5rem, 3vw, 2.4rem);
+        line-height: 1.1;
+      }
+
+      p {
+        margin: 8px 0 0;
+        color: var(--muted);
+      }
+
+      .actions {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        justify-content: flex-end;
+      }
+
+      a {
+        color: var(--accent-dark);
+      }
+
+      .button {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 42px;
+        padding: 0 16px;
+        border: 1px solid var(--accent);
+        border-radius: 6px;
+        background: var(--accent);
+        color: #ffffff;
+        font-weight: 700;
+        text-decoration: none;
+        white-space: nowrap;
+      }
+
+      .button.secondary {
+        background: transparent;
+        color: var(--accent-dark);
+      }
+
+      .viewer {
+        overflow: hidden;
+        height: min(1120px, calc(100vh - 148px));
+        min-height: 620px;
+        border: 1px solid var(--border);
+        border-radius: 8px;
+        background: var(--panel);
+      }
+
+      iframe {
+        display: block;
+        width: 100%;
+        height: 100%;
+        border: 0;
+      }
+
+      @media (max-width: 720px) {
+        header {
+          align-items: flex-start;
+          flex-direction: column;
+        }
+
+        .actions {
+          justify-content: flex-start;
+          width: 100%;
+        }
+
+        .button {
+          flex: 1 1 160px;
+        }
+
+        .viewer {
+          height: 76vh;
+          min-height: 520px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <header>
+        <div>
+          <h1>Octavio Jimenez Gonzalez</h1>
+          <p>Sr. Software / Data Engineer</p>
+        </div>
+        <nav class="actions" aria-label="Resume links">
+          <a class="button" href="resume_2026-09-10.pdf" download>Download PDF</a>
+          <a class="button secondary" href="resume.md">View Markdown</a>
+        </nav>
+      </header>
+
+      <section class="viewer" aria-label="Resume PDF preview">
+        <iframe title="Resume PDF" src="resume_2026-09-10.pdf"></iframe>
+      </section>
+    </main>
+  </body>
+</html>
